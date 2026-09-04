@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Zombie Shooot — Three.js</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="hud">
+    <div class="brand">ZOMBIE <span>SHOOOT</span></div>
+    <div class="stats"><div><small>SCORE</small><b id="score">0</b></div><div><small>WAVE</small><b id="wave">1</b></div><div><small>AMMO</small><b id="ammo">12 / ∞</b></div></div>
+    <div class="health"><span>HP</span><div><i id="healthBar"></i></div><b id="healthText">100</b></div>
+  </div>
+  <div id="crosshair"><i></i><i></i><i></i><i></i><em></em></div>
+  <div id="damageFlash"></div>
+  <div id="message" class="hidden"></div>
+  <div id="startScreen" class="screen">
+    <div class="panel"><p class="eyebrow">THREE.JS SURVIVAL</p><h1>ZOMBIE<br><span>SHOOOT</span></h1><p class="intro">Survive the night. Clear every wave.</p><button id="startBtn">ENTER THE NIGHT</button><div class="controls"><kbd>W A S D</kbd> MOVE <kbd>SHIFT</kbd> SPRINT <kbd>SPACE</kbd> JUMP <kbd>MOUSE</kbd> AIM / FIRE <kbd>R</kbd> RELOAD</div></div>
+  </div>
+  <div id="gameOver" class="screen hidden"><div class="panel"><p class="eyebrow">YOU DIED</p><h2>THE HORDE<br><span>WON</span></h2><p>Final score <b id="finalScore">0</b> · Wave <b id="finalWave">1</b></p><button id="restartBtn">TRY AGAIN</button></div></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
